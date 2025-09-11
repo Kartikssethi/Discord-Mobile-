@@ -5,17 +5,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+//import retrofit2.Retrofit;
+//import retrofit2.converter.gson.GsonConverterFactory;
+//import retrofit2.Call;
+//import retrofit2.Callback;
+//import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
     //private TextView Helloworld;
     private TextView Heading;
     private TextView Description;
     private TextView description;
-    private Button Register;
-    private Button Log_in;
+    private Button Register, Log_in;
 
 
     @Override
@@ -33,12 +42,21 @@ public class MainActivity extends AppCompatActivity {
 
 //        fetchMessageFromAPI();
 
+        // intent to open the login page
         Log_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Sign_In.class);
                 startActivity(intent);
 
+            }
+        });
+        // intent to open the signup page
+        Register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Sign_Up.class);
+                startActivity(intent);
             }
         });
     }
