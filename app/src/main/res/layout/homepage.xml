@@ -5,7 +5,7 @@
     android:id="@+id/Bio"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1E1F38"> <!-- Dark Discord-like background -->
+    android:background="@drawable/background"> <!-- Set image background -->
 
     <TextView
         android:id="@+id/Heading"
@@ -17,7 +17,7 @@
         android:layout_marginBottom="555dp"
         android:fontFamily="@font/anton"
         android:text="WELCOME TO  PRISM"
-        android:textColor="#E0FFFFFF"
+        android:textColor="#E0F8F8F8"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
