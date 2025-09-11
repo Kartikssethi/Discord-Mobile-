@@ -17,7 +17,7 @@
         android:layout_marginBottom="555dp"
         android:fontFamily="@font/anton"
         android:text="WELCOME TO  PRISM"
-        android:textColor="#E0F8F8F8"
+        android:textColor="#C2F8F8F8"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="177dp"
         android:layout_marginBottom="474dp"
         android:fontFamily="@font/anton"
@@ -37,10 +38,9 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Heading"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.166" />
 
     <Button
         android:id="@+id/Register"
