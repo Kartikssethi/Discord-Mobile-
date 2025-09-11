@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Bio"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"> <!-- Set image background -->
+    android:background="@drawable/background">
 
+    <!-- Heading Text -->
     <TextView
         android:id="@+id/Heading"
         android:layout_width="wrap_content"
@@ -16,7 +18,7 @@
         android:layout_marginEnd="137dp"
         android:layout_marginBottom="555dp"
         android:fontFamily="@font/anton"
-        android:text="WELCOME TO  PRISM"
+        android:text="WELCOME TO PRISM"
         android:textColor="#C2F8F8F8"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,6 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Description Text -->
     <TextView
         android:id="@+id/Description"
         android:layout_width="wrap_content"
@@ -39,40 +42,43 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Heading"
+        app:layout_constraintTop_toBottomOf="@id/Heading"
         app:layout_constraintVertical_bias="0.166" />
 
+    <!-- Primary Button: Register -->
     <Button
         android:id="@+id/Register"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="175dp"
         android:layout_marginEnd="60dp"
-        android:layout_marginBottom="251dp"
-        android:backgroundTint="#B7FFFFFF"
         android:text="Register"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66FFFFFF"
+        app:cornerRadius="50dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#33FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/Description"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Description" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Secondary Button: Log in -->
     <Button
         android:id="@+id/Log_in"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="65dp"
         android:layout_marginEnd="60dp"
-        android:layout_marginBottom="137dp"
-        android:backgroundTint="#5059D1"
         android:text="Log in"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#33FFFFFF"
+        app:cornerRadius="50dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#66FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/Register"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Register"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
