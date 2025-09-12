@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -18,6 +19,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Sign Up Title -->
     <TextView
         android:id="@+id/signup_text"
         android:layout_width="wrap_content"
@@ -29,10 +32,11 @@
         android:text="Sign Up :)"
         android:textColor="#191919"
         android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Email Input -->
     <EditText
         android:id="@+id/signup_email"
         android:layout_width="0dp"
@@ -47,28 +51,12 @@
         android:textColorHighlight="#000000"
         android:textColorHint="#050505"
         android:textColorLink="#050505"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signup_text"
         tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/signup_button"
-        :backgroundTint="#D191F8"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="#BFA2DB"
-        android:hapticFeedbackEnabled="false"
-        android:text="Sign Up"
-        android:textColor="#1B1B1B"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_confirm_password" />
-
+    <!-- Password Input -->
     <EditText
         android:id="@+id/signup_password"
         android:layout_width="0dp"
@@ -80,10 +68,11 @@
         android:hint="Password..."
         android:inputType="textPassword"
         android:textColorHint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup_email" />
 
+    <!-- Confirm Password Input -->
     <EditText
         android:id="@+id/signup_confirm_password"
         android:layout_width="0dp"
@@ -95,7 +84,25 @@
         android:hint="Confirm Password..."
         android:inputType="textPassword"
         android:textColorHint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup_password" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#BFA2DB"
+        android:hapticFeedbackEnabled="false"
+        android:text="Sign Up"
+        android:textColor="#1B1B1B"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_confirm_password" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

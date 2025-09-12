@@ -12,23 +12,26 @@
         android:id="@+id/WelcText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
         android:fontFamily="@font/anton"
         android:text="Welcome Back!"
+        android:textColor="#EBE2E2"
+        android:textColorLink="#FFFFFF"
         android:textSize="34sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="81dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email or Username"
-        app:layout_constraintTop_toBottomOf="@id/WelcText"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:text="Email or Username"
+        android:textColor="#DECCCC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/WelcText" />
 
     <EditText
         android:id="@+id/Username"
@@ -47,11 +50,12 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
-        app:layout_constraintTop_toBottomOf="@id/Username"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textColor="#D1C2C2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Username" />
 
     <EditText
         android:id="@+id/editTextText2"
@@ -100,7 +104,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Log in with Google"
-            android:textColor="#000000"
+            android:textColor="#DCD0D0"
             android:textSize="16sp" />
     </LinearLayout>
 
