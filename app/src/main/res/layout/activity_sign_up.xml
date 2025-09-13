@@ -5,104 +5,148 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <!-- Background Image with Opacity -->
-    <ImageView
-        android:id="@+id/bgImage"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/welcome_background"
-        android:alpha="0.8"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    tools:context=".Sign_Up">
 
     <!-- Sign Up Title -->
     <TextView
         android:id="@+id/signup_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="133dp"
-        android:shadowColor="#FFFFFF"
-        android:text="Sign Up :)"
-        android:textColor="#191919"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/anton"
+        android:text="Sign Up"
+        android:textColor="#D6F8F8F8"
         android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Email Label -->
+    <TextView
+        android:id="@+id/label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Email or Username"
+        android:textColor="#DECCCC"
+        app:layout_constraintTop_toBottomOf="@id/signup_text"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Email Input -->
     <EditText
         android:id="@+id/signup_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="Email..."
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textColor="#000000"
-        android:textColorHighlight="#000000"
         android:textColorHint="#050505"
-        android:textColorLink="#050505"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/label_email"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signup_text"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/label_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textColor="#D1C2C2"
+        app:layout_constraintTop_toBottomOf="@id/signup_email"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Password Input -->
     <EditText
         android:id="@+id/signup_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="Password..."
         android:inputType="textPassword"
         android:textColorHint="#000000"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/label_password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_email" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Confirm Password Label -->
+    <TextView
+        android:id="@+id/label_confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Confirm Password"
+        android:textColor="#DED5D5"
+        app:layout_constraintTop_toBottomOf="@id/signup_password"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Confirm Password Input -->
     <EditText
         android:id="@+id/signup_confirm_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="Confirm Password..."
         android:inputType="textPassword"
         android:textColorHint="#000000"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/label_confirm_password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_password" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Sign Up Button -->
     <Button
         android:id="@+id/signup_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="#BFA2DB"
-        android:hapticFeedbackEnabled="false"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#5059D1"
         android:text="Sign Up"
-        android:textColor="#1B1B1B"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_confirm_password" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_confirm_password" />
+
+    <!-- Google login row -->
+    <LinearLayout
+        android:id="@+id/google_login_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/signup_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_google" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up with Google"
+            android:textColor="#DCD0D0"
+            android:textSize="16sp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
